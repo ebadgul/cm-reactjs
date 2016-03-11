@@ -7,6 +7,7 @@ var ReactDOM = require('react-dom')
 var React = require('react')
 
 var Header = require('./header');
+var Main = require('./main');
 var Footer = require('./footer');
 
 
@@ -55,6 +56,7 @@ var App = React.createClass({
       <div>
         <Header />
         <div className="container">
+        <Main />
         {this.props.children}
       </div>
       <Footer />
@@ -62,6 +64,10 @@ var App = React.createClass({
     )
   }
 });
+
+
+
+
 
 ReactDOM.render((
   <Router >
